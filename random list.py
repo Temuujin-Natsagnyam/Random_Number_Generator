@@ -1,5 +1,5 @@
+import datetime
 def rand_list(list):
-    import datetime
     now = datetime.datetime.now()
     list1 = []                             #big list
     list2 = []                             # refined list
@@ -25,9 +25,7 @@ def rand_list(list):
         ctr1 = ctr1 + 1
 
     return list2
-print(" Enter random sequence length")
-a = int(input())
-print(rand_list(a))
-
-
-
+while 1:
+    print(" Enter random sequence length")
+    a = int(input())
+    print(rand_list(a))
