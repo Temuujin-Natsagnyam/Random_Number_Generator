@@ -27,20 +27,9 @@ def rand_list(max,min):      # function that can return shuffle a list
 
     return list2
 def user():
-    print("\nEnter 1 to start the Random sequence generator")
-    inp = (input())
-    if inp == "1":
-        print("Enter Max value in sequence\n")
-        maxy = int(input())
-        print("\nEnter lowest value in sequence\n")
-        lowy = int(input())
-        print("\n")
-        print(rand_list(maxy,lowy))
-    elif inp is tuple:
-        print("\nThen what are you here for! (ﾉꐦ ◎曲◎)ﾉ=͟͟͞͞ ⌨ ")
-
-    else: print("\nThen what are you here for! (ﾉꐦ ◎曲◎)ﾉ=͟͟͞͞ ⌨ ")
-    return ("Thank you by the way")
+    maxy = int(input("\nEnter Max value in sequence\n>>"))
+    lowy = int(input("\nEnter lowest value in sequence\n>>"))
+    return(rand_list(maxy,lowy))
 
 while 1 == 1:
     print(user())
