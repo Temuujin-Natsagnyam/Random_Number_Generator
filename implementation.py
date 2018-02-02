@@ -1,8 +1,5 @@
-# DECK FOR TEST
-#KingSpades QueenSpades JackSpades 10Spades AceSpades KingDiamond QueenDiamond JackDiamond 10Diamond AceDiamond KingClubs QueenClubs JackClubs 10Clubs AceClubs    KingHearts QueenHearts JackHearts 10Hearts AceHearts Joker
-
-
-
+# This algorithm randomly shuffles a deck into three hands using my custom random function
+import datetime
 def map(set, idx):   #function that uses second parameter as index for first parameter, and maps it back
     sety = []      #Used in line 54
     ctr = 0
@@ -13,7 +10,6 @@ def map(set, idx):   #function that uses second parameter as index for first par
         ctr += 1
     return sety
 def rand_list(list):      # function that can return shuffle a list
-    import datetime
     now = datetime.datetime.now()
     list1 = []                             #big list
     list2 = []                             # refined list
@@ -73,15 +69,7 @@ def threerandpile(list): # function that divides 1 list into three different lis
     result_list.append(list2)
     result_list.append(list3)
     return result_list
-
-print("\n")
-print("Enter list")
-a = input().split()
-print("\n")
-print(threerandpile(a)[0])
-print("\n")
-print(threerandpile(a)[1])
-print("\n")
-print(threerandpile(a)[2])
-
-
+a = ("KingSpades","QueenSpades","JackSpades","10Spades","AceSpades","KingDiamond","QueenDiamond","JackDiamond","10Diamond","AceDiamond","KingClubs","QueenClubs","JackClubs","10Clubs","AceClubs","KingHearts","QueenHearts","JackHearts","10Hearts","AceHearts","Joker")
+print("\n",threerandpile(a)[0])
+print("\n",threerandpile(a)[1])
+print("\n",threerandpile(a)[2])
